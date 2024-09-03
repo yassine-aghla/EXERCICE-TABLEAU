@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int t[100];
+    int n,i,max;
+    printf("entrer le primier element ");
+    scanf("%d",&t[0]);
+    max=t[0];
+ printf("entrer le nombre delement dun tableau");
+ scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        printf("entrer lelement %d\n",i);
+        scanf ("%d",&t[i]);
+        if(t[i]>max)
+       max=t[i];
+    }
+    
+    printf("la valeur max est %d",max);
+
+    return 0;
+}

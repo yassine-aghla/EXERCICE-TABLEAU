@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int t[100];
+    int n,i,s=0;
+ printf("entrer le nombre delement dun tableau");
+ scanf("%d",&n);
+    for(i=0;i<n;i++){
+        printf("entrer lelement %d\n",i);
+        scanf ("%d",&t[i]);
+    }
+    for(i=0;i<n;i++){
+       s=s+t[i];
+    }
+    printf("la somme est %d",s);
+
+    return 0;
+}
