@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+int t[80];
+int i,n;
+printf("entrer la taille de tableau");
+scanf("%d",&n);
+for (i=0;i<n;i++){
+    printf("entrer le %d element ",i);
+    scanf("%d",&t[i]);
+}
+    for (i=0;i<n;i++){
+    if (t[i]%2!=0)
+        printf("%d \n",t[i]);
+    
+}
+return 0;
+}

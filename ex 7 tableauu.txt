@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int t[50],p,n;
+    int i,j;
+    printf("entre la taille ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        printf("entre le %d element ",i+1);
+        scanf("%d",&t[i]);
+    }
+    for(i=0;i<n-1;i++){
+        for(j=i+1;j<n;j++){
+            if(t[j]<t[i]){
+                p=t[i];
+                t[i]=t[j];
+                t[j]=p;
+            }
+            
+        }
+    }
+    for(i=0;i<n;i++){
+printf("%d \n",t[i]);
+ }
+    return 0;
+}
