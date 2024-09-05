@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+ int min (int a ,int b){
+        if (a>b)
+        return b;
+        else 
+        return a;
+ }
+int main() {
+    // Write C code here
+    int x ,y;
+    printf ("entre x ");
+    scanf("%d",&x);
+     printf ("entre y ");
+    scanf("%d",&y);
+    printf (" la valeur max est %d", min (x,y));
+    
+
+    return 0;
+}

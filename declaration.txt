@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    char nom[10],prenom[10],adresse_email[40];
+    int age ;
+    char sexe;
+    char m,f;
+    
+    printf("entrer votre nom");
+    scanf("%s",nom);
+       printf("entrer votre prenom");
+    scanf("%s",prenom);
+    printf("entre votre age");
+    scanf("%d",&age);
+    do {
+    printf("entre votre sexe (m/f)");
+    scanf(" %c",&sexe);
+    }while (sexe != 'm' && sexe !='f');
+    printf("entre l adresse email  ");
+    scanf("%s",adresse_email);
+    printf("bonjour je m appelle %s %s jai %d mon sexe est %c et mon addresse email est %s",nom,prenom,age,sexe,adresse_email);
+
+    return 0;
+}
