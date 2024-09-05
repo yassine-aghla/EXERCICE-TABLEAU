@@ -1,0 +1,21 @@
+#include <stdio.h>
+int parite (int a){
+    if(a%2==0)
+    return 1;
+    else 
+    return 0;
+    
+}
+
+int main() {
+    // Write C code here
+    int n,b;
+    printf("entrer un entier");
+    scanf("%d",&n);
+    b=parite(n);
+    
+   printf("%d retourne %d ",n,b);
+    
+
+    return 0;
+}
